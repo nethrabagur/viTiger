@@ -1,0 +1,13 @@
+{
+    "salutationtype": "Dr.",
+    "firstname" :"Suhas",
+    "lastname": "Shastry",
+    "leadsource": "Partner",
+    "secondaryemail": "abc@gmail.com",
+    "birthday": "2010-10-30",
+    "support_start_date": "2026-05-20",
+    "support_end_date": "2027-05-19",
+    "department": "NXP",
+    "mailingstreet": "mailingstreet1mailingstreet2mailingstreet3mailingstreet4mailingstreet5",
+    "description": "description1description2description3description4description5"
+}

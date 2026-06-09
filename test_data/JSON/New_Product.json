@@ -1,0 +1,10 @@
+
+    {
+        "productname": "Software Product",
+        "manufacturer": "LexPon Inc.",
+        "productcategory":"Software",
+        "productcode": "001",
+        "unit_price": "100",
+        "qtyinstock": "2000",
+        "description": "description1 description2 description3 description4 description5"
+    }

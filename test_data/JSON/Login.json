@@ -1,0 +1,6 @@
+
+    {
+    "URL": "http://localhost:8888//index.php?action=Login&module=Users",
+    "User Name":"admin",
+    "Password": "admin"
+    }
