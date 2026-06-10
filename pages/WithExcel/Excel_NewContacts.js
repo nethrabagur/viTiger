@@ -33,15 +33,16 @@ export class contact_loc{
     }
 
     async contact_details(salutationtype,firstname,lastname,leadsource,birthday,assigned_group_id,support_end_date,otherstreet,description){
+        
         let numb=generateRandomNumber()
         await this.contact.click()
         await this.page.waitForLoadState('domcontentloaded')
-        await this.page.waitForLoadState('networkidle')
+        //await this.page.waitForLoadState('networkidle')
         //await this.assert2.toBeVisible()
 
         await this.newContact.click()
-        // await this.page.waitForLoadState('domcontentloaded')
-        // await this.page.waitForLoadState('networkidle')
+        await this.page.waitForLoadState('domcontentloaded')
+       await this.page.waitForLoadState('networkidle')
         //await this.assert3.toBeVisible()
 
         await selectByText(this.salutation_type,salutationtype)
@@ -52,7 +53,7 @@ export class contact_loc{
         let popup1=await switchToPopup(this.page,()=>{
             this.organization_popup.click()
         })
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         //await this.page.waitForLoadState('networkidle')
         await popup1.locator(`//a[@id="2"]`).click()
 
@@ -69,10 +70,10 @@ export class contact_loc{
         let popup2=await switchToPopup(this.page,()=>{
             this.reportTo_popup.click()
         })
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         //await this.page.waitForLoadState('networkidle')
         await popup2.locator(`//a[@id="1"]`).click()
-
+        await this.page.waitForLoadState('domcontentloaded')
         await this.assigned_to.click()
         await selectByText(this.assigned_group_id,assigned_group_id)
         
@@ -86,7 +87,7 @@ export class contact_loc{
         await this.button.scrollIntoViewIfNeeded()
         await this.button.click()
 
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         //await this.page.waitForLoadState('networkidle')
         //await this.assert1.toBeVisible()
     }

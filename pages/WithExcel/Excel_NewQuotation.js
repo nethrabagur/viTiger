@@ -34,12 +34,12 @@ export class Quotation_loc{
 
         await this.more.hover()
         await this.quotation.click()
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await expect(this.assert1).toBeVisible()
         
         await this.quotation_Create.click()
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await expect(this.assert2).toBeVisible()
 
@@ -59,7 +59,7 @@ export class Quotation_loc{
         let popup2=await switchToPopup(this.page,()=>{
             this.contactName_popup.click()
         })
-        // await popup2.waitForLoadState('domcontentloaded')
+        await popup2.waitForLoadState('domcontentloaded')
         // await popup2.waitForLoadState('networkidle')
         await popup2.locator(`//a[@id="1"]`).click()
         
@@ -71,13 +71,13 @@ export class Quotation_loc{
         let popup3=await switchToPopup(this.page,()=>{
             this.itemName_popup.click()
         })
-        // await popup3.waitForLoadState('domcontentloaded')
+        await popup3.waitForLoadState('domcontentloaded')
         // await popup3.waitForLoadState('networkidle')
         await popup3.locator(`//a[@id="popup_product_452"]`).click()
         
         await this.qty.fill(qty1.toString())
         await this.saveButton.click()
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await expect(this.assert3).toBeVisible()
     }

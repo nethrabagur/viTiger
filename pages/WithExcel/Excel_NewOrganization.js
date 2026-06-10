@@ -34,12 +34,12 @@ export class organization_loc{
 
         let number=generateRandomNumber()
         await this.org.click()
-        //await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         //await this.page.waitForLoadState('networkidle')
         //await expect(this.assert2).toBeVisible()
         
         await this.CreateOrg.click()
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await expect(this.assert3).toBeVisible()
         
@@ -62,7 +62,7 @@ export class organization_loc{
         await this.Desc.fill(description+number)
         await this.button.click()
         
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await this.assert1.toBeVisible()
     }

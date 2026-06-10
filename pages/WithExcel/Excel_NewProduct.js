@@ -29,11 +29,11 @@ export class product_loc{
 
         let numb=generateRandomNumber()
         await this.products.click()
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await this.assert1.toBeVisible()
         await this.Create_Product.click()
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await this.assert2.toBeVisible()
 
@@ -44,8 +44,8 @@ export class product_loc{
         // let popup1=await switchToPopup(this.page,()=>{
         //     this.vendorname_popup.click()
         // })
-        // // await this.popup1.waitForLoadState('domcontentloaded')
-        // // await this.popup1.waitForLoadState('networkidle')
+        // await this.popup1.waitForLoadState('domcontentloaded')
+        // await this.popup1.waitForLoadState('networkidle')
         // await this.popup1.locator(`//a[@id="1"]`).click()
         
         
@@ -57,7 +57,7 @@ export class product_loc{
         await this.save_button.scrollIntoViewIfNeeded()
         await this.save_button.click()
         
-        // await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         // await this.page.waitForLoadState('networkidle')
         //await this.assert3.toBeVisible()
 

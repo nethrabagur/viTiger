@@ -37,7 +37,7 @@ export class leads_loc{
         //let url=this.page.url()
         //await expect(url).toHaveURL(this.leads_url)
         //await this.page.waitForLoadState('networkidle')
-        //await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         //await expect(this.assert2).toBeVisible()
 
 
@@ -45,7 +45,7 @@ export class leads_loc{
         // let url2=this.page.url()
         // await expect(url).toHaveURL(this.createleads_url)
         //await this.page.waitForLoadState('networkidle')
-        //await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         //await expect(this.assert3).toBeVisible()
         
         let number = generateRandomNumber()
@@ -72,7 +72,7 @@ export class leads_loc{
         await this.button.click()
         
         //await this.page.waitForLoadState('networkidle')
-        //await this.page.waitForLoadState('domcontentloaded')
+        await this.page.waitForLoadState('domcontentloaded')
         
         // let url3=this.page.url()
         // await expect(this.url3).toHaveURL(this.saveleads_url)

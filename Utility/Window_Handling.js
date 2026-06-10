@@ -6,6 +6,6 @@ export async function switchToPopup(page, action) {
     ])
 
     await popup.waitForLoadState()
-
+    await popup.waitForLoadState('domcontentloaded')
     return popup
 } 
