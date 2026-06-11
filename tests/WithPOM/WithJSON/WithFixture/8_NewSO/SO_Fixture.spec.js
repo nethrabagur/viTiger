@@ -1,4 +1,4 @@
-import { test } from "../../../../fixture/CRM_Fixture";
+import {test} from "../../../../../fixture/CRM_FixturewithJSON.js"
 import so_data from '../../../../../test_data/JSON/New_SalesOrder.json'
 
 test('fixture_so',async ({SOPage}) => {

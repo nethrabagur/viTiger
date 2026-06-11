@@ -1,5 +1,5 @@
 import { test,expect } from "@playwright/test";
-import { readExcel } from "../../../../Utility/Excel";
+import { readExcel } from "../../../../../Utility/Excel.js";
 import { login_loc } from "../../../../../pages/WithExcel/Excel_Login";
 import { log_out } from "../../../../../pages/WithExcel/Excel_Logout";
 import { Quotation_loc } from "../../../../../pages/WithExcel/Excel_NewQuotation";

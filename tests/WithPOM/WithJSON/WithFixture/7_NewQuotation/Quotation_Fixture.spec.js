@@ -1,4 +1,4 @@
-import { test } from "../../../../fixture/CRM_Fixture";
+import {test} from "../../../../../fixture/CRM_FixturewithJSON.js"
 import quote_data from '../../../../../test_data/JSON/New_Quotation.json'
 
 test('fixture_quotation',async ({QuotePage}) => {

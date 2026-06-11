@@ -1,4 +1,4 @@
-import { test } from "../../../../fixture/CRM_Fixture";
+import {test} from "../../../../../fixture/CRM_FixturewithJSON.js"
 import org_data from '../../../../../test_data/JSON/New_Organization.json'
 
 

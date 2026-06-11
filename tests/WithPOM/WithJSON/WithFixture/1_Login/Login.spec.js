@@ -1,5 +1,4 @@
-import { test } from "../../../../fixture/login";
-
+import { test } from "../../../../../fixture/LoginwithJSON"
 
 test('fixture_login',async ({LoginPage}) => {
     
