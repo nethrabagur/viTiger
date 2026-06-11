@@ -4,7 +4,7 @@ import { login_loc } from "../../../../../pages/WithExcel/Excel_Login";
 import { log_out } from "../../../../../pages/WithExcel/Excel_Logout";
 import { Quotation_loc } from "../../../../../pages/WithExcel/Excel_NewQuotation";
 
-test.only('ExcelPOM_NewQuotation',async ({page}) => {
+test('ExcelPOM_NewQuotation',async ({page}) => {
 
     test.slow()
     let login= new login_loc(page)

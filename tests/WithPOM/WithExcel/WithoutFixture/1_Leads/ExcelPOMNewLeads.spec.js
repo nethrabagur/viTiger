@@ -4,7 +4,7 @@ import { login_loc } from "../../../../../pages/WithExcel/Excel_Login.js";
 import { log_out } from "../../../../../pages/WithExcel/Excel_Logout.js";
 import { readExcel } from "../../../../../Utility/Excel.js";
 
-test.only('ExcelPOMNewLeads',async ({page}) => {
+test('ExcelPOMNewLeads',async ({page}) => {
     test.slow()
     
     let login= new login_loc(page)
