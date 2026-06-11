@@ -1,8 +1,8 @@
 import { test,expect } from "@playwright/test";
 import { readExcel } from "../../../../Utility/Excel.js";
-import { organization_loc } from "../../../../pages/WithExcel/Excel_NewOrganization.js";
-import { login_loc } from "../../../../pages/WithExcel/Excel_Login.js";
-import { log_out } from "../../../../pages/WithExcel/Excel_Logout.js";
+import { organization_loc } from "../../../../../pages/WithExcel/Excel_NewOrganization.js";
+import { login_loc } from "../../../../../pages/WithExcel/Excel_Login.js";
+import { log_out } from "../../../../../pages/WithExcel/Excel_Logout.js";
 
 
 test.only('ExcelPOM_NewOrg',async ({page}) => {

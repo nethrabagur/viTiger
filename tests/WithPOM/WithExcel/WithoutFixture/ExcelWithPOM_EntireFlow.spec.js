@@ -1,15 +1,15 @@
 import { test,expect } from "@playwright/test";
 import { readExcel } from "../../../../Utility/Excel.js";
-import { login_loc } from "../../../../pages/WithExcel/Excel_Login.js";
-import { leads_loc } from "../../../../pages/WithExcel/Excel_NewLeads.js";
-import { organization_loc } from "../../../../pages/WithExcel/Excel_NewOrganization.js";
-import { contact_loc } from "../../../../pages/WithExcel/Excel_NewContacts.js";
-import { Opportunity_loc } from "../../../../pages/WithExcel/Excel_NewOpportunity.js";
-import { product_loc } from "../../../../pages/WithExcel/Excel_NewProduct.js";
-import { Quotation_loc } from "../../../../pages/WithExcel/Excel_NewQuotation.js";
-import { salesorder_loc } from "../../../../pages/WithExcel/Excel_SalesOrder.js";
-import { Invoice_loc } from "../../../../pages/WithExcel/excel_Invoice.js";
-import { log_out } from "../../../../pages/WithExcel/Excel_Logout.js";
+import { login_loc } from "../../../../../pages/WithExcel/Excel_Login.js";
+import { leads_loc } from "../../../../../pages/WithExcel/Excel_NewLeads.js";
+import { organization_loc } from "../../../../../pages/WithExcel/Excel_NewOrganization.js";
+import { contact_loc } from "../../../../../pages/WithExcel/Excel_NewContacts.js";
+import { Opportunity_loc } from "../../../../../pages/WithExcel/Excel_NewOpportunity.js";
+import { product_loc } from "../../../../../pages/WithExcel/Excel_NewProduct.js";
+import { Quotation_loc } from "../../../../../pages/WithExcel/Excel_NewQuotation.js";
+import { salesorder_loc } from "../../../../../pages/WithExcel/Excel_SalesOrder.js";
+import { Invoice_loc } from "../../../../../pages/WithExcel/excel_Invoice.js";
+import { log_out } from "../../../../../pages/WithExcel/Excel_Logout.js";
 
 test.only('ExcelPOM_WithEntireFlow',async ({page}) => {
     test.slow()

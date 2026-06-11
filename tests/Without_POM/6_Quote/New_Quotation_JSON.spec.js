@@ -1,6 +1,6 @@
 import { test,expect } from "@playwright/test";
-import login_details from '../../test_data/Login.json'
-import quot_details from '../../test_data/New_Quotation.json'
+import login_details from '../../../test_data/JSON/Login.json'
+import quot_details from '../../../test_data/JSON/New_Quotation.json'
 
 
 test('New_Quotation_JSON',async ({page}) => {

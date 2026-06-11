@@ -1,8 +1,8 @@
 import { test,expect } from "@playwright/test";
-import { leads_loc } from "../../../../pages/WithExcel/Excel_NewLeads.js";
-import { login_loc } from "../../../../pages/WithExcel/Excel_Login.js";
-import { log_out } from "../../../../pages/WithExcel/Excel_Logout.js";
-import { readExcel } from "../../../../Utility/Excel.js";
+import { leads_loc } from '../../../../../pages/WithExcel/Excel_NewLeads.js'
+import { login_loc } from "../../../../../pages/WithExcel/Excel_Login.js";
+import { log_out } from "../../../../../pages/WithExcel/Excel_Logout.js";
+import { readExcel } from "../../../../../Utility/Excel.js";
 
 test.only('ExcelPOMNewLeads',async ({page}) => {
     test.slow()

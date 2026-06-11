@@ -1,6 +1,6 @@
 import { test,expect } from "@playwright/test";
-import login_details from '../../test_data/Login.json'
-import contact_details from '../../test_data/New_Contacts.json'
+import login_details from '../../../test_data/JSON/Login.json'
+import contact_details from '../../../test_data/JSON/New_Contacts.json'
 
 test('New_Contacts_JSON',async ({page}) => {
      //!Login Functionality

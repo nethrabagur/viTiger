@@ -1,8 +1,8 @@
 import { test,expect } from "@playwright/test";
 import { readExcel } from "../../../../Utility/Excel";
-import { login_loc } from "../../../../pages/WithExcel/Excel_Login";
-import { log_out } from "../../../../pages/WithExcel/Excel_Logout";
-import { salesorder_loc } from "../../../../pages/WithExcel/Excel_SalesOrder";
+import { login_loc } from "../../../../../pages/WithExcel/Excel_Login";
+import { log_out } from "../../../../../pages/WithExcel/Excel_Logout";
+import { salesorder_loc } from "../../../../../pages/WithExcel/Excel_SalesOrder";
 
 test.only('ExcelPOM_NewSalesOrder',async ({page}) => {
 
